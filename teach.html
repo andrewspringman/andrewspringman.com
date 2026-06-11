@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teach — Andrew Springman</title>
+  <meta name="description" content="Andrew Springman teaches mathematical art, composition, mathematics, programming, and AI. Find the angle from which a hard idea becomes obvious.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Andrew Springman</a>
+      <ul class="nav-links" role="list">
+        <li><a href="teach.html" class="active" aria-current="page">Teach</a></li>
+        <li><a href="commission.html">Commission</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    <a href="teach.html" class="active">Teach</a>
+    <a href="commission.html">Commission</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- ── Page Header ────────────────────────────────────── -->
+  <header class="page-header">
+    <div class="container">
+      <span class="mono-label">Teaching</span>
+      <h1 style="margin-top: 12px;">Learn something you didn't think you could.</h1>
+      <p>
+        I've spent years finding the angle from which a hard idea becomes obvious.
+        If you're already curious but haven't found the right explanation yet —
+        that's exactly who I teach.
+      </p>
+    </div>
+  </header>
+
+  <!-- ── Teaching Cards ─────────────────────────────────── -->
+  <main>
+    <div class="container">
+      <div class="teaching-grid">
+
+        <!-- Mathematical Art -->
+        <article class="teaching-card blue fade-in">
+          <span class="card-accent-label">Mathematical Art</span>
+          <h3>Mathematical Art</h3>
+          <p>
+            Iterative transformation graphing — the math behind fractal and generative images.
+            We start with a single function, apply it repeatedly, and watch structure emerge from chaos.
+            Hands-on with ITGrapher, the renderer I built for exactly this purpose.
+            No prior math background required beyond curiosity.
+          </p>
+          <a href="about.html#contact" class="btn-ghost">Get in touch &rarr;</a>
+        </article>
+
+        <!-- Composition & Songwriting -->
+        <article class="teaching-card gold fade-in">
+          <span class="card-accent-label">Composition &amp; Songwriting</span>
+          <h3>Composition &amp; Songwriting</h3>
+          <p>
+            Music theory applied to actual writing — not theory for its own sake.
+            Voice leading, harmonic motion, formal structure, reharmonization.
+            Whether you're writing hymns, jazz standards, or something that doesn't have a name yet,
+            the tools are the same.
+          </p>
+          <a href="about.html#contact" class="btn-ghost">Get in touch &rarr;</a>
+        </article>
+
+        <!-- Mathematics -->
+        <article class="teaching-card gold fade-in">
+          <span class="card-accent-label">Mathematics</span>
+          <h3>Mathematics</h3>
+          <p>
+            The math that shows up in the real world: number theory, geometry, the patterns underneath things.
+            I teach from first principles and I don't skip the interesting parts.
+            Suitable for people who were told they weren't math people — I've never believed that.
+          </p>
+          <a href="about.html#contact" class="btn-ghost">Get in touch &rarr;</a>
+        </article>
+
+        <!-- Programming -->
+        <article class="teaching-card blue fade-in">
+          <span class="card-accent-label">Programming</span>
+          <h3>Programming</h3>
+          <p>
+            How to think computationally, and how to turn that thinking into working code.
+            I've taught beginners and worked alongside senior engineers.
+            The starting point is always the same: what problem are we actually solving?
+          </p>
+          <a href="about.html#contact" class="btn-ghost">Get in touch &rarr;</a>
+        </article>
+
+        <!-- Use of AI -->
+        <article class="teaching-card orange fade-in">
+          <span class="card-accent-label">Use of AI</span>
+          <h3>Use of AI</h3>
+          <p>
+            Practical AI literacy for people who want to use these tools well — not just use them.
+            Prompting, agents, automation, and the judgment to know when AI helps and when it doesn't.
+            Especially useful for educators, creatives, and nonprofit professionals.
+          </p>
+          <a href="about.html#contact" class="btn-ghost">Get in touch &rarr;</a>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-social" aria-label="Social links">
+        <a href="#" rel="noopener">YouTube</a>
+        <a href="#" rel="noopener">SoundCloud</a>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">Facebook</a>
+        <a href="#" rel="noopener">X</a>
+        <a href="#" rel="noopener">LinkedIn</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Andrew Springman</p>
+      <p class="footer-sub">Built with ITGrapher fractal art</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Andrew Springman</title>
+  <meta name="description" content="Andrew Springman — composer, visual artist, educator, and software developer based in Harrisburg, NC. Get in touch.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Andrew Springman</a>
+      <ul class="nav-links" role="list">
+        <li><a href="teach.html">Teach</a></li>
+        <li><a href="commission.html">Commission</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+      </ul>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    <a href="teach.html">Teach</a>
+    <a href="commission.html">Commission</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html" class="active">About</a>
+  </div>
+
+  <!-- ── Bio ────────────────────────────────────────────── -->
+  <main>
+    <section style="padding-top: var(--space-7);">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Bio text -->
+          <div class="bio-text fade-in">
+            <span class="mono-label">About</span>
+            <h1 style="margin-top: 12px;">The through-line is helping people understand beautiful things.</h1>
+
+            <p>
+              Andrew Springman is a composer, visual artist, educator, and software developer
+              based in Harrisburg, NC.
+            </p>
+
+            <p>
+              His work doesn't fit neatly into one category — and he's stopped trying to make it.
+              He composes music daily, teaches math and music theory, makes generative mathematical art,
+              builds software tools, and has been exploring the creative applications of artificial intelligence
+              since before it was mainstream. The common thread is making sophisticated ideas accessible —
+              not by simplifying them, but by finding the angle from which they become inevitable.
+            </p>
+
+            <p>
+              He built ITGrapher — a real-time Metal renderer for iterative transformation fractals —
+              as both a studio tool and a teaching instrument. The mathematical art it produces is what
+              happens when a lifelong interest in the structure of things meets a programming environment
+              fast enough to explore it in real time.
+            </p>
+
+            <p>
+              By day, Andrew serves as Senior Manager of Enterprise Development at the Billy Graham
+              Evangelistic Association. His personal creative work — the compositions, the mathematical art,
+              the teaching — happens in the hours that belong to him.
+            </p>
+
+            <p>He is a Jesus follower, a husband, and a father.</p>
+
+            <div class="roles" aria-label="Roles">
+              <span class="role-pill">Composer</span>
+              <span class="role-pill">Visual Artist</span>
+              <span class="role-pill">Educator</span>
+              <span class="role-pill">Programmer</span>
+              <span class="role-pill">AI Practitioner</span>
+              <span class="role-pill">Worship Leader</span>
+            </div>
+          </div>
+
+          <!-- Photo placeholder -->
+          <aside class="bio-aside fade-in">
+            <div class="photo-placeholder" aria-label="Photo placeholder">[Photo]</div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ── Contact ────────────────────────────────────────── -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <span class="mono-label">Contact</span>
+        <h2 style="margin-top: 12px;">Get in touch.</h2>
+        <p class="contact-intro">
+          I read every message. If what you're asking about isn't something I can help with,
+          I'll say so — and I'll try to point you somewhere that can.
+        </p>
+
+        <form
+          class="contact-form fade-in"
+          action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
+          method="POST"
+          novalidate
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+                autocomplete="name"
+              >
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+                autocomplete="email"
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic&hellip;</option>
+              <option value="Teaching inquiry">Teaching inquiry</option>
+              <option value="Commission inquiry">Commission inquiry</option>
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell me what you're thinking about…"
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-primary">Send message &rarr;</button>
+          </div>
+
+          <p class="form-note">
+            Replace <code style="color: var(--text-muted);">REPLACE_WITH_FORM_ID</code> in the form action
+            with your Formspree form ID before going live.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-social" aria-label="Social links">
+        <a href="#" rel="noopener">YouTube</a>
+        <a href="#" rel="noopener">SoundCloud</a>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">Facebook</a>
+        <a href="#" rel="noopener">X</a>
+        <a href="#" rel="noopener">LinkedIn</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Andrew Springman</p>
+      <p class="footer-sub">Built with ITGrapher fractal art</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

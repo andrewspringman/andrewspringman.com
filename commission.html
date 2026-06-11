@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commission — Andrew Springman</title>
+  <meta name="description" content="Commission original music, mathematical artwork, or custom software from Andrew Springman. Selective work for people and organizations doing something genuinely good.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Andrew Springman</a>
+      <ul class="nav-links" role="list">
+        <li><a href="teach.html">Teach</a></li>
+        <li><a href="commission.html" class="active" aria-current="page">Commission</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    <a href="teach.html">Teach</a>
+    <a href="commission.html" class="active">Commission</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- ── Page Header ────────────────────────────────────── -->
+  <header class="page-header">
+    <div class="container">
+      <span class="mono-label">Commission</span>
+      <h1 style="margin-top: 12px;">Let's build something that matters.</h1>
+      <p>
+        I take on a small number of commissions each year — for people and organizations doing work I believe in.
+        I'm not the right collaborator for every project, but when the fit is right, I bring everything I have.
+      </p>
+    </div>
+  </header>
+
+  <!-- ── Service Cards ──────────────────────────────────── -->
+  <main>
+    <div class="container">
+      <div class="commission-grid">
+
+        <!-- Music -->
+        <article class="commission-card fade-in">
+          <div class="commission-icon" aria-hidden="true">♫</div>
+          <h3>Music</h3>
+          <p>
+            Original compositions, arrangements, and production.
+            I've written for worship services, educational settings, film-adjacent projects,
+            and pure concert performance. My background is jazz and classical theory,
+            which means I can write in almost any style while understanding why it works.
+          </p>
+          <a href="about.html#contact" class="btn-ghost">Start a conversation &rarr;</a>
+        </article>
+
+        <!-- Artwork -->
+        <article class="commission-card fade-in">
+          <div class="commission-icon" aria-hidden="true">⬡</div>
+          <h3>Artwork</h3>
+          <p>
+            Generative and mathematical art — prints, large-format digital originals,
+            and pieces designed for specific spaces. Every work is produced with ITGrapher,
+            my custom Metal renderer, which means each piece is genuinely one-of-a-kind:
+            the result of specific mathematical parameters no one has set exactly that way before.
+          </p>
+          <a href="about.html#contact" class="btn-ghost">Start a conversation &rarr;</a>
+        </article>
+
+        <!-- Software -->
+        <article class="commission-card fade-in">
+          <div class="commission-icon" aria-hidden="true">⌨</div>
+          <h3>Software</h3>
+          <p>
+            Custom tools for good causes. I've built everything from church management utilities
+            to generative art engines to music education apps. I prefer working with nonprofits,
+            educators, and faith communities — organizations that are trying to do something real
+            and don't have the budget for enterprise vendors.
+          </p>
+          <a href="about.html#contact" class="btn-ghost">Start a conversation &rarr;</a>
+        </article>
+
+      </div>
+
+      <!-- Bottom note -->
+      <aside class="commission-note fade-in">
+        I read every inquiry personally and respond within a week. If I'm not the right person
+        for what you need, I'll tell you that honestly and try to point you somewhere useful.
+      </aside>
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-social" aria-label="Social links">
+        <a href="#" rel="noopener">YouTube</a>
+        <a href="#" rel="noopener">SoundCloud</a>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">Facebook</a>
+        <a href="#" rel="noopener">X</a>
+        <a href="#" rel="noopener">LinkedIn</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Andrew Springman</p>
+      <p class="footer-sub">Built with ITGrapher fractal art</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

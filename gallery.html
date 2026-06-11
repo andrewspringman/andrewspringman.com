@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Andrew Springman</title>
+  <meta name="description" content="Mathematical and generative art produced with ITGrapher, and original music compositions by Andrew Springman.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Andrew Springman</a>
+      <ul class="nav-links" role="list">
+        <li><a href="teach.html">Teach</a></li>
+        <li><a href="commission.html">Commission</a></li>
+        <li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="nav-overlay" role="dialog" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    <a href="teach.html">Teach</a>
+    <a href="commission.html">Commission</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- ── Page Header ────────────────────────────────────── -->
+  <header class="page-header">
+    <div class="container">
+      <span class="mono-label">Gallery</span>
+      <h1 style="margin-top: 12px;">Art &amp; Music</h1>
+    </div>
+  </header>
+
+  <!-- ── Tabs ───────────────────────────────────────────── -->
+  <main>
+    <div class="container">
+
+      <div class="gallery-tabs" role="tablist" aria-label="Gallery sections">
+        <button
+          class="tab-btn active"
+          role="tab"
+          aria-selected="true"
+          aria-controls="tab-art"
+          data-tab="tab-art"
+          id="btn-art"
+        >Art</button>
+        <button
+          class="tab-btn"
+          role="tab"
+          aria-selected="false"
+          aria-controls="tab-music"
+          data-tab="tab-music"
+          id="btn-music"
+        >Music</button>
+      </div>
+
+      <!-- ── Art Tab ──────────────────────────────────── -->
+      <div
+        id="tab-art"
+        class="tab-panel active"
+        role="tabpanel"
+        aria-labelledby="btn-art"
+        aria-hidden="false"
+      >
+        <p class="gallery-caption">
+          Every piece here was generated with ITGrapher — a real-time Metal renderer I built from scratch on macOS.
+          Each image is the visual record of a mathematical process: an iterated transform function applied across
+          a coordinate space, colored by how the orbit of each point evolves. The parameters that produced each
+          piece are embedded in the file and can never be exactly reproduced by accident.
+        </p>
+
+        <div class="art-grid">
+
+          <figure class="art-item fade-in">
+            <div class="art-placeholder">[Artwork Title]</div>
+            <figcaption class="art-item-footer">
+              <span class="art-item-title">Iteration Study №1</span>
+              <a href="about.html#contact" class="art-inquire">Inquire &rarr;</a>
+            </figcaption>
+          </figure>
+
+          <figure class="art-item fade-in">
+            <div class="art-placeholder">[Artwork Title]</div>
+            <figcaption class="art-item-footer">
+              <span class="art-item-title">Orbit Portrait №2</span>
+              <a href="about.html#contact" class="art-inquire">Inquire &rarr;</a>
+            </figcaption>
+          </figure>
+
+          <figure class="art-item fade-in">
+            <div class="art-placeholder">[Artwork Title]</div>
+            <figcaption class="art-item-footer">
+              <span class="art-item-title">Coordinate Field №3</span>
+              <a href="about.html#contact" class="art-inquire">Inquire &rarr;</a>
+            </figcaption>
+          </figure>
+
+          <figure class="art-item fade-in">
+            <div class="art-placeholder">[Artwork Title]</div>
+            <figcaption class="art-item-footer">
+              <span class="art-item-title">Transform Study №4</span>
+              <a href="about.html#contact" class="art-inquire">Inquire &rarr;</a>
+            </figcaption>
+          </figure>
+
+          <figure class="art-item fade-in">
+            <div class="art-placeholder">[Artwork Title]</div>
+            <figcaption class="art-item-footer">
+              <span class="art-item-title">Phase Portrait №5</span>
+              <a href="about.html#contact" class="art-inquire">Inquire &rarr;</a>
+            </figcaption>
+          </figure>
+
+          <figure class="art-item fade-in">
+            <div class="art-placeholder">[Artwork Title]</div>
+            <figcaption class="art-item-footer">
+              <span class="art-item-title">Attractor Series №6</span>
+              <a href="about.html#contact" class="art-inquire">Inquire &rarr;</a>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+
+      <!-- ── Music Tab ─────────────────────────────────── -->
+      <div
+        id="tab-music"
+        class="tab-panel"
+        role="tabpanel"
+        aria-labelledby="btn-music"
+        aria-hidden="true"
+      >
+        <div class="music-panel">
+
+          <div class="music-placeholder fade-in">
+            <div class="placeholder-icon" aria-hidden="true">♫</div>
+            <h3>[SoundCloud tracks coming soon]</h3>
+            <p class="text-muted" style="font-size:0.85rem;">Tracks will appear here once uploaded to SoundCloud.</p>
+          </div>
+
+          <div class="music-placeholder fade-in">
+            <div class="placeholder-icon" aria-hidden="true">▶</div>
+            <h3>[YouTube channel link — update with real URL]</h3>
+            <a href="#" class="btn btn-secondary" style="margin-top: 8px;">Visit YouTube Channel &rarr;</a>
+          </div>
+
+          <div class="music-note fade-in">
+            <p>
+              I compose daily. The catalog spans jazz, sacred music, cinematic instrumental work,
+              and things that resist categorization. Everything here is available for licensing —
+              contact me with the project and intended use.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <nav class="footer-social" aria-label="Social links">
+        <a href="#" rel="noopener">YouTube</a>
+        <a href="#" rel="noopener">SoundCloud</a>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">Facebook</a>
+        <a href="#" rel="noopener">X</a>
+        <a href="#" rel="noopener">LinkedIn</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Andrew Springman</p>
+      <p class="footer-sub">Built with ITGrapher fractal art</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
